@@ -103,7 +103,6 @@
               </div>
             </div>
             <!-- End Avatar -->
-
             <div class="mt-5">
               <p>
                 1995年生まれ　東京在住<br />プロフィール画像は福島県のあかべこです
@@ -127,8 +126,58 @@
             <h5 class="text-xl md:text-2xl font-bold">
               バックエンドエンジニア
             </h5>
-            <h6 class="text-lg font-bold">通信系の自社開発企業</h6>
-            <p>2022/6 - 現在</p>
+            <h6 class="text-lg font-bold">通信系の自社開発案件</h6>
+            <p>2024/7 - 現在</p>
+          </div>
+          <div class="flex flex-col col-span-4">
+            <h6 class="text-lg font-bold">
+              自社サービスの配信システムのAWS技術検証
+            </h6>
+            <p>開発環境：Python, AWS(API Gateway, SQS, Lambda, RDS, ElastiCache, CloudWatch, X-Rayなど)</p>
+            <p>
+              自社は通信サービスを運用している。インフラ構成をマイクロサービスにすることで、障害発生時のサービスへの影響を最小限にする狙いがあった。モデルを作成し、システムの実現可能性などを検証した。
+              具体的には、電話番号とメッセージ内容に応じて処理を分けていく。その過程で、外部サービスのAPIを呼び出す必要があるが、呼び出し制限がある。そのために、ElastiCacheを使用して1秒当たりの呼び出し制限を実装した。
+              主に以下の項目について、様々なパラメータとともに検証した。
+              <ul>
+                <li>
+                  (1). パラメータに応じて適切なLambda処理に分岐できるか
+                </li>
+                <li>
+                  (2). APIの呼び出し制限に合わせて、意図した処理エラーを返せるか
+                </li>
+                <li>
+                  (3). 失敗したLambdaについて適切に再実行できるか
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div class="flex flex-col col-span-2 mb-4 md:mb-0">
+            <h6 class="text-lg font-bold">フードデリバリーのECアプリ開発案件</h6>
+            <p>2023/9 - 現在</p>
+          </div>
+          <div class="flex flex-col col-span-4">
+            <h6 class="text-lg font-bold">
+              フードデリバリーのネイティブアプリと管理CMSのリプレイス
+            </h6>
+            <p>開発環境：Laravel10, Flutter, MySQL, Docker, Github, AWS</p>
+            <p>
+              注文アプリの顧客情報やCMSコンテンツを取り扱うバックオフィスの要件定義・設計をメインに担当した。
+              また、クライアントとの会議の議事録の作成、デザインチームの進捗状況の管理、Flutterのコードの軽微な修正などを行った。
+            </p>
+            <p>
+              また、専門外の分野でも積極的に勉強して、貢献していった。今回の案件では、チームの人員リソースの問題で、インフラ担当のメンバーが不足している状況だった。
+              そのためシニアのバックエンドエンジニアが構築を行うことになったが、私はそのテストを行った。
+              それまで業務としてのAWS構築経験はなかったが、業務外でハンズオンを行ったり、AWS資格を取得したりと独学で勉強していた。
+              そのことを上長にアピールして、テスト担当になり、過去の試験書や先輩からのレビューを参考にして、テストを完遂させた。
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div class="flex flex-col col-span-2 mb-4 md:mb-0">
+            <h6 class="text-lg font-bold">通信系の自社開発案件</h6>
+            <p>2022/6 - 2023/9</p>
           </div>
           <div class="flex flex-col col-span-4">
             <h6 class="text-lg font-bold">
